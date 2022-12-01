@@ -8,7 +8,7 @@ import { useAuthContext } from "../context/AuthProvider";
 const SearchMovies = ({ getMovies }) => {
   const inputMovie = useRef();
   const MD_API_KEY = process.env.REACT_APP_MD_API_KEY;
-  const { user, setUser } = useAuthContext();
+  const { user } = useAuthContext();
 
   const searchMovie = () => {
     let searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${MD_API_KEY}&query=${inputMovie.current.value}`;

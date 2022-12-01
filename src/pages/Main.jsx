@@ -16,7 +16,7 @@ const Main = () => {
 
   useEffect(() => {
     getMovies(url);
-  }, []);
+  }, [url]);
 
   return (
     <>
