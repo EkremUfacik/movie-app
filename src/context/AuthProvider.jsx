@@ -6,6 +6,7 @@ export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(false);
+  const [load, setLoad] = useState(false);
 
   useEffect(() => {
     onAuthStateChanged(auth, (currentUser) => {
@@ -13,11 +14,16 @@ const AuthProvider = ({ children }) => {
         const { email, displayName } = currentUser;
         setUser({ email, displayName });
       } else setUser(false);
+
+      setLoad(true);
     });
+    // eslint-disable-next-line
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={{ user }}>
+      {load && children}
+    </AuthContext.Provider>
   );
 };
 
