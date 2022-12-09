@@ -44,4 +44,4 @@
 
 ## Screenshot
 
-<img src="" alt="user" style="zoom: 200%;" />
+<img src="src/asset/movie-app.gif" alt="user" style="zoom: 200%;" />
