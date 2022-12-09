@@ -40,8 +40,8 @@
 ```
 
 ## Link
-- https://movie-app-eu.netlify.app/
+- https://fireblog-app-eu.netlify.app/
 
 ## Screenshot
 
-<img src="src/asset/movie-app.gif" alt="user" style="zoom: 200%;" />
+<img src="" alt="user" style="zoom: 200%;" />
