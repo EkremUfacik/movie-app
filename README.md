@@ -40,7 +40,7 @@
 ```
 
 ## Link
-- https://fireblog-app-eu.netlify.app/
+- https://movie-app-eu.netlify.app/
 
 ## Screenshot
 
