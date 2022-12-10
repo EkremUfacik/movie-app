@@ -7,12 +7,17 @@ import AuthProvider from "./context/AuthProvider";
 import Navbar from "./components/Navbar";
 import { ToastContainer } from "react-toastify";
 import PrivateRouter from "./router/PrivateRouter";
+import { useState } from "react";
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
+  console.log(isDark);
+
   return (
-    <div className="App">
+    <div className={isDark ? "dark" : "light"}>
       <AuthProvider>
-        <Navbar />
+        <Navbar isDark={isDark} setIsDark={setIsDark} />
+
         <ToastContainer hideProgressBar={true} autoClose={3000} />
 
         <Routes>
