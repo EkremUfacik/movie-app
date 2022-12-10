@@ -16,14 +16,16 @@ import { useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../auth/firebase";
 import { useAuthContext } from "../context/AuthProvider";
+
 import { toast } from "react-toastify";
+import { MaterialUISwitch } from "./Switch";
 
 const drawerWidth = 240;
 
 function Navbar(props) {
   const { user } = useAuthContext();
   const navigate = useNavigate();
-  const { window } = props;
+  const { window, isDark, setIsDark } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -76,7 +78,7 @@ function Navbar(props) {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
       <AppBar
         component="nav"
         position="fixed"
@@ -128,6 +130,11 @@ function Navbar(props) {
               </Button>
             )}
           </Box>
+
+          <MaterialUISwitch
+            sx={{ margin: "auto", mr: "0" }}
+            onClick={() => setIsDark(!isDark)}
+          />
         </Toolbar>
       </AppBar>
       <Toolbar />

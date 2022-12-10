@@ -19,6 +19,7 @@ export default function ActionAreaCard({ movies }) {
 
   return (
     <Box
+      className="movie-card"
       py={4}
       sx={{
         display: "flex",
@@ -60,6 +61,7 @@ export default function ActionAreaCard({ movies }) {
               />
 
               <CardContent
+                className="card-content"
                 sx={{
                   display: "flex",
                   justifyContent: "space-between",
@@ -72,6 +74,7 @@ export default function ActionAreaCard({ movies }) {
                   {m.original_title}
                 </Typography>
                 <Typography
+                  className="average"
                   variant="body1"
                   color="secondary"
                   sx={{

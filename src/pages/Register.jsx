@@ -58,6 +58,7 @@ const Register = () => {
       </Box>
 
       <Box
+        className="register-bg"
         component="form"
         onSubmit={register}
         px={{ xs: 12, md: 3 }}

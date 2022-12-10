@@ -27,8 +27,8 @@ const MovieDetails = () => {
   }, [url, videoUrl]);
 
   return (
-    <>
-      <Typography variant="h4" align="center" mt={3}>
+    <Box className="movie-detail">
+      <Typography variant="h4" align="center" pt={3}>
         {title}
       </Typography>
 
@@ -87,7 +87,7 @@ const MovieDetails = () => {
           </Box>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
 

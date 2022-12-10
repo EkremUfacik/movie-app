@@ -25,6 +25,7 @@ const SearchMovies = ({ getMovies }) => {
 
   return (
     <Box
+      className="search"
       sx={{
         display: "flex",
         alignItems: "center",
@@ -35,13 +36,14 @@ const SearchMovies = ({ getMovies }) => {
       }}
     >
       <TextField
-        id="outlined-basic"
+        className="s-input"
+        id="filled-basic"
         label="Search a movie"
-        variant="outlined"
+        variant="filled"
         size="small"
         inputRef={inputMovie}
       />
-      <Button variant="outlined" onClick={searchMovie}>
+      <Button className="s-button" variant="outlined" onClick={searchMovie}>
         Search
       </Button>
     </Box>

@@ -49,6 +49,7 @@ const Login = () => {
       </Box>
 
       <Box
+        className="login-bg"
         component="form"
         onSubmit={login}
         px={{ xs: 12, md: 3 }}

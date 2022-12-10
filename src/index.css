@@ -5,6 +5,44 @@
 
 }
 
+.dark .search {
+  background-color: rgba(0, 0, 0, 0.847)
+}
+
+.dark .search .s-input,
+.dark .search .s-button {
+  background-color: rgb(163, 163, 163);
+  color: rgb(2, 38, 10);
+}
+
+.dark .movie-card {
+  background-color: rgba(0, 0, 0, 0.873);
+}
+
+.dark .card-content {
+  color: rgb(220, 220, 220);
+  background-color: rgba(0, 0, 0, 0.922);
+}
+
+.dark .average {
+  background-color: rgba(0, 0, 0, 0.752)
+}
+
+.dark .login-bg {
+  background-color: rgba(0, 0, 0, 0.578);
+  filter: brightness(0.6);
+}
+
+.dark .register-bg {
+  background-color: rgba(45, 72, 0, 0.578);
+  filter: brightness(0.6);
+}
+
+.dark .movie-detail {
+  color: rgba(255, 255, 255, 0.693);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .overview {
   background-color: rgba(0, 0, 0, 0.518);
   transition: all 1s;
